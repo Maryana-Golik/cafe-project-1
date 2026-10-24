@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo">Arôme caffee</div>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Головна</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="booking.html" class="active">Бронювання</a>
+      </nav>
+    </header>
+
+    <section class="parallax booking-section">
+      <div class="booking-container">
+        <h2>Забронювати<br>столик</h2>
+        <p class="description">Зарезервуйте ідеальний час у нашій затишній кав'ярні</p>
+
+        <form action="#">
+
+          <div class="form-group">
+            <label for="name">Ваше повне ім'я</label>
+            <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Дата бронювання</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">Бажаний час</label>
+              <input type="time" id="time" name="time" min="09:00" max="22:00" required>
+            </div>
+          </div>
+
+
+          <div class="form-group form-checkbox">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree" class="check-label">Я згоден з правилами та умовами бронювання</label>
+          </div>
+
+          <button type="submit" class="btn-full">✓ Підтвердити бронювання</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Arôme Coffee.</p>
+    </footer>
+</body>
+</html>
